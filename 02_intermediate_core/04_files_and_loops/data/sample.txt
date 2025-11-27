@@ -1,0 +1,4 @@
+Hello
+This is a test file
+It contains several lines
+Used for counting lines
