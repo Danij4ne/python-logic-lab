@@ -34,3 +34,41 @@ Example:
 # 4. Print the result.
 # 5. (Optional) Handle division by zero if the operation is "/".
 
+"""
+Ex03 - Simple Calculator
+
+Description:
+    Write a program that asks the user for two numbers
+    and an operation (+, -, *, /), then prints the result
+    of applying that operation.
+"""
+
+ 
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+
+symbol1 = input("Choose an operation (+, -, *, /): ")
+
+
+if symbol1 == "+":
+    res = num1 + num2
+    print(f"The result of {num1} {symbol1} {num2} is {res:.2f}")
+
+elif symbol1 == "-":
+    res = num1 - num2
+    print(f"The result of {num1} {symbol1} {num2} is {res:.2f}")
+
+elif symbol1 == "*":
+    res = num1 * num2
+    print(f"The result of {num1} {symbol1} {num2} is {res:.2f}")
+
+elif symbol1 == "/":
+    if num2 == 0:
+        print("Error: Division by zero is not allowed.")
+    else:
+        res = num1 / num2
+        print(f"The result of {num1} {symbol1} {num2} is {res:.2f}")
+
+else:
+    print("ERROR: Invalid operation")
