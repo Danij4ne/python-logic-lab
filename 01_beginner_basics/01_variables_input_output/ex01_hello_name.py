@@ -18,13 +18,15 @@ Example:
     Hello Daniel, welcome!
 """
 
-
-
-
-
-
 # TODO:
 # 1. Ask the user for their name using input().
 # 2. Store the name in a variable.
 # 3. Print a greeting message that includes the name.
+
+
+name = input("What is your name ?")
+
+print(f"Hello {name} , welcome ")
+
+
 
