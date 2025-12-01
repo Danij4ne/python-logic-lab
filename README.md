@@ -1,4 +1,16 @@
 # Python Logic Lab
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Logic Challenges](https://img.shields.io/badge/Focus-Logic_Challenges-2C3E50?style=for-the-badge)
+![Structured Levels](https://img.shields.io/badge/Architecture-5_Progressive_Levels-0A66C2?style=for-the-badge)
+![Algorithms & OOP](https://img.shields.io/badge/Includes-Algorithms_&_OOP-8E44AD?style=for-the-badge)
+![Interview Prep](https://img.shields.io/badge/Section-Interview_Prep-F39C12?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/danij4ne/python-logic-lab?style=for-the-badge)
+![Commit Activity](https://img.shields.io/github/commit-activity/m/danij4ne/python-logic-lab?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-27AE60?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-1D8348?style=for-the-badge)
+
+
+
 
 Python Logic Lab is a structured programming repository designed to organize and develop Python problem-solving skills across five progressive levels. Each level contains exercises or projects focused on specific areas of logic, algorithms, data structures, object-oriented programming, and real-world console applications.
 
