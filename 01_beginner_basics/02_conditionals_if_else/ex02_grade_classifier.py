@@ -32,3 +32,19 @@ Example:
 # 3. Use if/elif/else to classify the score.
 # 4. Print the grade category.
 
+number = int(input("Enter your score : "))
+
+if number > 100 or number < 0:
+    print("ERROR NUMBER, try again")
+
+elif number >= 90:
+    print("Excellent")
+elif number >= 70:
+    print("Good")
+elif number >= 50:
+    print("Pass")
+else:
+    print("Fail")
+
+
+

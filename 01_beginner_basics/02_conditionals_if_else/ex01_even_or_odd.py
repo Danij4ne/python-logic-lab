@@ -24,3 +24,11 @@ Example:
 # 2. Convert the input to an integer.
 # 3. Use if/else to check if the number is even or odd.
 # 4. Print the result.
+
+number = int(input("Enter a number: "))
+
+if number % 2 == 0:
+    print(f"{number} is even.")
+else:
+    print(f"{number} is odd.")
+
