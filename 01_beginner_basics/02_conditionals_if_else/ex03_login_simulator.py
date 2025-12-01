@@ -32,3 +32,20 @@ Example:
 # 2. Ask the user to enter a username and a password.
 # 3. Compare both using if/else.
 # 4. Print the result.
+
+username = input("Enter username : ")
+
+passw = int(input("Enter password : "))
+
+real_user = "Dani09"
+
+real_password = 123456
+
+if username == real_user and passw == real_password:
+    print("Login successful")
+elif username != real_user and passw == real_password:
+    print("ERROR , incorrect username ")
+elif username == real_user and passw != real_password:
+    print("ERROR , incorrect password ")
+elif username != real_user and passw != real_password:
+    print("ERROR , incorrect password and username ")
