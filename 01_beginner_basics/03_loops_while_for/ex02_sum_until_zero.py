@@ -31,3 +31,13 @@ Example:
 # 3. Add each number to the total.
 # 4. Stop the loop when the user enters 0.
 # 5. Print the final total.
+
+
+myNumber = 0
+while True : 
+    num = int(input("Enter a number :"))
+    if num == 0:
+        break;
+    myNumber += num
+print(f"Total sum: {myNumber}")
+
