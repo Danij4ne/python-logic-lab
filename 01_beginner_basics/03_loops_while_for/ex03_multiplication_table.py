@@ -28,3 +28,10 @@ Example:
 # 2. Convert the input to an integer.
 # 3. Use a loop to print the multiplication table from 1 to 10.
 # 4. Print each line in the format: number x i = result.
+
+u_number = int(input("Enter a number :"))
+for i in range(1,11):
+    result = u_number * i
+
+    print(f"{u_number} x {i} = {result}")
+
