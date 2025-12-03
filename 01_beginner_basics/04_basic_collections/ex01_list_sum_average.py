@@ -29,3 +29,17 @@ Example:
 # 3. Convert each element to a number.
 # 4. Calculate the sum and the average.
 # 5. Print the results.
+
+numbers = str(input("Enter numbers separated by spaces:"))
+list_num = []
+list_num = numbers.split()
+
+int_list_num = [int(i) for i in list_num]
+
+total_sum =  sum(int_list_num)
+    
+print(total_sum)
+
+the_average = total_sum / len(int_list_num)
+
+print(the_average)
