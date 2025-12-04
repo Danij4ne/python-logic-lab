@@ -29,3 +29,17 @@ Example:
 # 3. Convert each element to a number.
 # 4. Find the maximum and minimum values.
 # 5. Print both results.
+
+numbers = input("Enter numbers separated by spaces: ")
+
+numbers = numbers.split()
+
+int_numbers = [int(i) for i in numbers]
+
+max_num = max(int_numbers)
+
+print(max_num)
+
+min_num = min((int_numbers))
+
+print(min_num)
