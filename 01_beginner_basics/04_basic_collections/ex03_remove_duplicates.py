@@ -30,3 +30,14 @@ Example:
 # 3. Convert each element to a number.
 # 4. Remove duplicate values.
 # 5. Print the final list.
+
+numbers = input("Enter numbers separated by spaces: ")
+new_nums = numbers.split()
+
+int_nums = [int(i) for i in new_nums]
+
+clean_nums = list(set(int_nums))
+
+print("List without duplicates:", clean_nums)
+
+
