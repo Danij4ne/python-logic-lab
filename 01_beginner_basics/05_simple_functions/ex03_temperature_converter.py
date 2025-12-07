@@ -29,3 +29,16 @@ Example:
 # 3. Ask the user for a Celsius temperature.
 # 4. Convert the input to a number.
 # 5. Call the function and print the result.
+
+
+def celsius_to_fahrenheit(c):
+    return (c * 9/5) + 32
+
+cels = float(input("Enter temperature in Celsius: "))
+
+result = celsius_to_fahrenheit(cels)
+
+print(f"{cels}°C is {result}°F")
+
+
+
