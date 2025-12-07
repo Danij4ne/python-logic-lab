@@ -29,3 +29,22 @@ Example:
 # 3. Return True if prime, False otherwise.
 # 4. Ask the user for a number.
 # 5. Call the function and print the result.
+
+def is_prime(num):
+    sums = 0
+    for i in range(1, num + 1, 1):
+        if num % i == 0:
+            sums += 1
+    
+    if sums == 2:
+        return ("is Prime")
+    else:
+        return ("is not Prime")
+
+
+user_num = int(input("Enter a number:"))
+
+result = is_prime(user_num)
+
+print(f"{user_num} {result} ")
+
