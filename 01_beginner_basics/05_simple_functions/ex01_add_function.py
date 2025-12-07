@@ -30,3 +30,18 @@ Example:
 # 3. Convert them to numbers.
 # 4. Call the function and store the result.
 # 5. Print the result.
+
+
+def add_numbers(a, b):
+    return a + b
+
+
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+result = add_numbers(num1, num2)
+
+print("Result:", result)
+
+
+
