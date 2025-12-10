@@ -30,3 +30,13 @@ Example:
 # 2. Ask the user for a character.
 # 3. Use nested loops to print an N x N square.
 
+
+the_size = int(input("Enter size:" ))
+the_char = input("Enter character:")
+
+for i in range (0,the_size , 1):
+    for j in range (0,the_size , 1):
+        print(the_char, end="")
+    print()
+
+
