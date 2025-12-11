@@ -27,3 +27,12 @@ Example:
 # 2. Convert the input to an integer.
 # 3. Use nested loops to generate the multiplication table.
 # 4. Print each row on a separate line.
+
+the_size = int(input(" Enter size: "))
+
+for i in range (1,the_size +1 , 1):
+    for j in range (1,the_size +1 , 1):
+        res = i * j
+        print(res , end="")
+    print()
+    
