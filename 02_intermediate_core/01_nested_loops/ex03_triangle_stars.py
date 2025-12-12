@@ -29,3 +29,12 @@ Example:
 # 1. Ask the user for the triangle size (N).
 # 2. Convert the input to an integer.
 # 3. Use loops to print a triangle where the i-th row has i stars.
+
+the_size = int(input("Enter size : "))
+
+for i in range(1, the_size + 1):
+    for j in range(i):
+        print("*", end="")
+    print()
+
+
