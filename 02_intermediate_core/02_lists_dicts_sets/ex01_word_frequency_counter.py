@@ -30,3 +30,16 @@ Example:
 # 2. Split it into words.
 # 3. Use a dictionary to count word occurrences.
 # 4. Print each word and its frequency.
+
+ 
+sentence = input("Enter a sentence: ")
+
+word_counts = {}
+
+for word in sentence.split():
+    word = word.lower()
+    word_counts[word] = word_counts.get(word, 0) + 1
+
+ 
+for word, count in word_counts.items():
+    print(f"{word}: {count}")
