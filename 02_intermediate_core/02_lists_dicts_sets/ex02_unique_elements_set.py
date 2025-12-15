@@ -31,3 +31,10 @@ Example:
 # 3. Convert each value to a number if needed.
 # 4. Create a set from the list to remove duplicates.
 # 5. Print the unique values.
+
+numbers = input("Enter values: ")
+my_set = {int(i) for i in numbers.split()}
+
+print(my_set)
+
+
