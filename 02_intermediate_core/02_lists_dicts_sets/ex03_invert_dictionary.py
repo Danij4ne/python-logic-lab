@@ -25,3 +25,13 @@ Example:
 # 1. Create a sample dictionary.
 # 2. Invert it by swapping keys and values.
 # 3. Print both the original and the inverted dictionary.
+
+original_dict = {"a": 1, "b": 2, "c": 3}
+inverted_dict = {}
+
+for key, value in original_dict.items():
+    inverted_dict[value] = key
+
+print("Original:", original_dict)
+print("Inverted:", inverted_dict)
+
