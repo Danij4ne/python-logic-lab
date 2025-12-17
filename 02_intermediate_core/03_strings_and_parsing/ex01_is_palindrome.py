@@ -29,3 +29,19 @@ Example:
 # 2. Remove spaces and convert to lowercase.
 # 3. Check if the text is the same forwards and backwards.
 # 4. Print the result.
+
+text = input("Enter text: ")
+
+clean_text = "".join(i.lower() for i in text.split())
+
+palindrome = True
+total = len(clean_text)
+
+for i in range(total):
+    if clean_text[i] != clean_text[total - 1 - i]:
+        palindrome = False
+        break
+
+
+
+
