@@ -32,3 +32,19 @@ Example:
 # 2. Convert them to lowercase and remove spaces if needed.
 # 3. Compare the letters of both words.
 # 4. Print whether they are anagrams.
+
+word1 = input("Enter first word:")
+word2 = input("Enter second word:")
+
+word1 = word1.lower().replace(" " , "")
+word2 = word2.lower().replace(" " , "")
+
+wordf1 = "".join(sorted(word1))
+
+wordf2 = "".join(sorted(word2))
+
+if wordf1 == wordf2:
+    print(f"{word1} and {word2} are anagrams")
+else:
+    print(f"{word1} and {word2} are not anagrams")
+
