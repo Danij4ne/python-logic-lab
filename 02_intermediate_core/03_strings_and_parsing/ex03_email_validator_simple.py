@@ -28,3 +28,14 @@ Example:
 # 2. Check if it contains "@".
 # 3. Check if there is a "." after the "@".
 # 4. Print whether the email is valid.
+
+the_email = input("Enter email: ")
+
+try:
+    at_index = the_email.index("@")
+    dot_index = the_email.index(".", at_index)
+
+    print("The email is valid")
+
+except ValueError:
+    print("The email is not valid")
