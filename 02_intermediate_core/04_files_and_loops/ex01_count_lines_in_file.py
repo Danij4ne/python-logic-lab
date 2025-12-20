@@ -29,3 +29,11 @@ Example:
 # 2. Open the file in read mode.
 # 3. Loop through the file and count the lines.
 # 4. Print the total count.
+
+name_file = input("Enter file name: ")
+
+with open ("02_intermediate_core/04_files_and_loops/data/" + name_file , "r") as file:
+    counts = 0
+    for line in file:
+        counts += 1
+print(counts)
