@@ -33,3 +33,14 @@ Example:
 # 2. Open the file in read mode.
 # 3. Loop through each line and count occurrences of the word.
 # 4. Print the total count.
+
+file_name = input("Enter file name: ")
+
+word_name  = input("Enter word to search:")
+
+with open ("02_intermediate_core/04_files_and_loops/data/" + file_name , "r") as f:
+    word_counts = 0 
+    for lines in f:
+        word_counts += lines.count(word_name)
+
+print(f"{word_name} found {word_counts} times ")
