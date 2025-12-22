@@ -32,3 +32,14 @@ Example:
 # 3. Loop through each line and check for "ERROR".
 # 4. Count how many lines contain the word.
 # 5. Print the result.
+
+name_file =  input("Enter log file name: ")
+
+count_lines = 0
+
+with open ("02_intermediate_core/04_files_and_loops/data/" + name_file , "r") as f:
+    for line in f: 
+        if line.count("ERROR"):
+            count_lines += 1
+
+print(f"ERROR lines found: {count_lines}")
