@@ -34,3 +34,37 @@ Example:
 # 3. Call the correct function based on the operation.
 # 4. Print the result.
 # 5. (Optional) Handle division by zero in the divide function.
+
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        return "Error: division by zero"
+    return a / b
+
+
+n1 = int(input("Enter first number: "))
+n2 = int(input("Enter second number: "))
+operation = input("Enter operation (+, -, *, /): ")
+
+if operation == "+":
+    result = add(n1, n2)
+elif operation == "-":
+    result = subtract(n1, n2)
+elif operation == "*":
+    result = multiply(n1, n2)
+elif operation == "/":
+    result = divide(n1, n2)
+else:
+    result = "Invalid operation"
+
+print("Result:", result)
+
