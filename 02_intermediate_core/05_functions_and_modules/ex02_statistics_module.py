@@ -40,3 +40,57 @@ Example:
 # 2. Ask the user for numbers separated by spaces.
 # 3. Convert the input into a list of numbers.
 # 4. Call each function and print the results.
+
+
+def calculate_sum(numbers):
+    result = 0
+    for num in numbers:
+        result += num
+    return result
+
+
+def calculate_average(numbers):
+    total = 0
+    count = 0
+    for num in numbers:
+        total += num
+        count += 1
+    return total / count
+
+
+def calculate_max(numbers):
+    max_num = numbers[0]
+    for num in numbers:
+        if num > max_num:
+            max_num = num
+    return max_num
+
+
+def calculate_min(numbers):
+    min_num = numbers[0]
+    for num in numbers:
+        if num < min_num:
+            min_num = num
+    return min_num
+
+
+nums = input("Enter numbers: ")
+
+nums = nums.replace(",", " ")
+numbers = [int(number) for number in nums.split()]
+
+total = calculate_sum(numbers)
+average = calculate_average(numbers)
+maximum = calculate_max(numbers)
+minimum = calculate_min(numbers)
+
+print("Sum:", total)
+print("Average:", average)
+print("Max:", maximum)
+print("Min:", minimum)
+
+
+        
+        
+
+
