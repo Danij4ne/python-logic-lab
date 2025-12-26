@@ -37,3 +37,35 @@ Example (Simplified):
 # 3. Call the correct function based on the user's selection.
 # 4. Stop the loop when the exit option is chosen.
 # 5. Print a goodbye message when exiting.
+
+from datetime import datetime
+
+def say_hello():
+    print("Hello!")
+
+def show_date():
+    print("Current date and time:", datetime.now())
+
+running = True
+
+while running:
+    print("\n1. Say Hello")
+    print("2. Show Date")
+    print("3. Exit")
+
+    option = input("Enter option: ")
+
+    if option == "1":
+        say_hello()
+
+    elif option == "2":
+        show_date()
+
+    elif option == "3":
+        print("Goodbye!")
+        running = False   # aquí controlas el bucle
+
+    else:
+        print("Invalid option")
+
+
