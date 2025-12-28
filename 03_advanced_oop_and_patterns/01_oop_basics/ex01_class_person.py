@@ -28,3 +28,18 @@ Example (expected behavior):
 # 2. Store name and age as instance attributes.
 # 3. Implement an introduce() method that prints a short message.
 # 4. Create an instance of Person and call introduce().
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+ 
+    def introduce(self):
+        print("Hi, my name is " + self.name + " and I am " + str(self.age) + " years old.")
+
+
+p1 = Person("Alice", 30)
+p1.introduce()
+
+        
+
