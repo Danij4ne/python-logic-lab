@@ -36,3 +36,31 @@ Example (expected behavior):
 # 3. Implement deposit(amount) and withdraw(amount) methods.
 # 4. Implement get_balance() to return the current balance.
 # 5. Create an instance and demonstrate basic operations.
+
+class BankAccount:
+    def __init__(self, initial_balance):
+        self.initial_balance = initial_balance
+
+    def deposit(self, amount):
+        self.initial_balance += amount
+
+    def withdraw(self, amount):
+        if self.initial_balance >= amount:
+            self.initial_balance -= amount
+        else:
+            print("There are not enough funds")
+
+    def get_balance(self):
+        return self.initial_balance
+    
+    
+account = BankAccount(0)
+
+print("Balance:", account.get_balance())
+
+account.deposit(100)
+print("Balance:", account.get_balance())
+
+account.withdraw(40)
+print("Balance:", account.get_balance())
+ 
