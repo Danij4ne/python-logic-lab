@@ -40,3 +40,53 @@ Example (expected behavior):
 # 1. Define the Book class with title, author, and status.
 # 2. Implement checkout(), return_book(), and display_info().
 # 3. Create an instance and demonstrate the full workflow.
+
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+        self.status = "Available"
+
+    def checkout(self):
+        if self.status == "Available":
+            print("Checking out the book...")
+            self.status = "Checked Out"
+        else:
+            print("The book is already checked out.")
+
+    def return_book(self):
+        print("Returning the book...")
+        self.status = "Available"
+
+    def display_info(self):
+        print("Title:", self.title)
+        print("Author:", self.author)
+        print("Status:", self.status)
+
+        
+book1 = Book("The Hobbit", "J.R.R. Tolkien")
+
+book1.display_info()
+print()
+
+book1.checkout()
+book1.display_info()
+print()
+
+book1.return_book()
+book1.display_info()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
