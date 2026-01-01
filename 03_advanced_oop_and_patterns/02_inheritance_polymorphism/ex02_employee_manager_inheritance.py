@@ -33,3 +33,27 @@ Example (expected behavior):
 # 2. Define the Manager subclass with an additional department attribute.
 # 3. Override display_info() in Manager to show the department.
 # 4. Create an Employee and a Manager, then call display_info() on both.
+
+
+class Employee :
+    def __init__(self, name , salary):
+        self.name = name 
+        self.salary = salary
+
+    def display_info(self):
+        print(self.name)
+        print(self.salary)
+    
+
+class Manager(Employee):
+    def __init__(self, name, salary, department):
+        super().__init__(name, salary)
+        self.department = department
+
+    def display_info(self):
+        super().display_info()
+        print(self.department)
+
+ 
+
+        
