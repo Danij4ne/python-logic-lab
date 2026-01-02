@@ -37,3 +37,40 @@ Example (expected behavior):
 # 2. Create Car and Motorcycle subclasses with additional attributes.
 # 3. Override display_info() in both subclasses.
 # 4. Create examples and call display_info() on each.
+
+class Vehicle:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def display_info(self):
+        print(self.brand, self.model)
+
+
+class Car(Vehicle):
+    def __init__(self, brand, model, doors):
+        super().__init__(brand, model)
+        self.doors = doors
+
+    def display_info(self):
+        print(f"Car: {self.brand} {self.model}, Doors: {self.doors}")
+
+
+class Motorcycle(Vehicle):
+    def __init__(self, brand, model, has_sidecar=False):
+        super().__init__(brand, model)
+        self.has_sidecar = has_sidecar
+
+    def display_info(self):
+        print(f"Motorcycle: {self.brand} {self.model}, Sidecar: {self.has_sidecar}")
+
+
+ 
+car = Car("Toyota", "Corolla", 4)
+motorcycle = Motorcycle("Harley", "Davidson", False)
+
+car.display_info()
+motorcycle.display_info()
+
+
+
