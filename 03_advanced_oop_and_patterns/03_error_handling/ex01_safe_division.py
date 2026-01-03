@@ -29,3 +29,18 @@ Example (expected behavior):
 # 2. Handle division by zero inside the function.
 # 3. Demonstrate at least one valid division and one invalid division.
 
+
+def divide(a, b):
+    try:
+        result = a / b
+        return result
+    except Exception as e:
+        print(e)
+
+
+# Successful case
+result1 = divide(10, 2)
+print("Result:", result1)
+
+# Failed case
+result2 = divide(10, 0)
