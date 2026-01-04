@@ -33,3 +33,14 @@ Example (expected behavior):
 # 2. Use try/except when opening the file.
 # 3. Print the contents if successful.
 # 4. Print an error message if opening fails.
+
+the_file = input("Enter file name: ")
+
+try:
+    with open(the_file, "r") as f:
+        content = f.read()
+        print(content)
+except Exception:
+    print("Error: could not open the file")
+
+    
