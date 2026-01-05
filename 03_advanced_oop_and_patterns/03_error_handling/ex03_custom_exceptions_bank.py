@@ -33,3 +33,31 @@ Example (expected behavior):
 # 2. Create the BankAccount class with a withdraw(amount) method.
 # 3. Raise the custom exception if amount > balance.
 # 4. Use try/except to handle the exception when testing the withdrawal.
+
+ 
+class InsufficientFundsError(Exception):
+    pass
+
+ 
+class BankAccount:
+    def __init__(self, balance):
+        self.balance = balance
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            raise InsufficientFundsError("insufficient funds")
+        else:
+            self.balance -= amount
+            print(f"Withdrawal successful. New balance: {self.balance}")
+
+
+account = BankAccount(100)
+
+try:
+    account.withdraw(40)  
+    account.withdraw(80)    
+
+except InsufficientFundsError as e:
+    print("Error:", e)
+
+
