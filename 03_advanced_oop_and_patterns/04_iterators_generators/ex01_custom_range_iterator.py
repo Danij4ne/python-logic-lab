@@ -34,3 +34,23 @@ Example (expected behavior):
 # 2. Implement __iter__() to return self.
 # 3. Implement __next__() to return the next value or raise StopIteration.
 # 4. Create an instance and loop through it, printing each value.
+
+
+class CustomRange:
+    def __init__(self, start, end):
+        self.start = start    
+        self.end = end        
+
+    def __iter__(self):
+        return self         
+
+    def __next__(self):
+        if self.start >= self.end:
+            raise StopIteration
+        valor = self.start
+        self.start += 1
+        return valor
+
+for x in CustomRange(5, 10):
+    print(x)
+    
