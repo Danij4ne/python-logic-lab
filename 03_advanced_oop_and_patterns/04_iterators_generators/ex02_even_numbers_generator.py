@@ -30,3 +30,13 @@ Example (expected behavior):
 # 1. Define the generator function even_numbers(limit).
 # 2. Yield even numbers until the limit is reached.
 # 3. Call the generator and print each value.
+
+def even_numbers(limit) :
+    for num in range(0, limit , 2):
+        yield num
+
+
+for num in even_numbers(12):
+    print(num)
+
+
