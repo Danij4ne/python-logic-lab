@@ -30,3 +30,14 @@ Example (expected behavior):
 # 1. Define paginated_reader(data, page_size).
 # 2. Yield slices of the list, page by page.
 # 3. Test the generator with a sample list and print each page.
+
+
+my_list = [1, 2, 3, 4, 5, 6, 7, 8]
+
+def paginated_reader(data, page_size):
+    for i in range(0, len(data), page_size):
+        yield data[i:i + page_size]
+
+for page in paginated_reader(my_list, 3):
+    print("Page:", page)
+
