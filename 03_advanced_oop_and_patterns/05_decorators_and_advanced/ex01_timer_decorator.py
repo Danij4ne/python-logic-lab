@@ -30,3 +30,24 @@ Example (expected behavior):
 # 2. Measure the time before and after calling the function.
 # 3. Apply the decorator to a sample function.
 # 4. Run the function and print the elapsed time.
+
+import time
+
+def timer(func):
+    def wrapper():
+        start = time.time()     
+        func()                    
+        end = time.time()        
+        elapsed = end - start    
+        print(f"Function took {elapsed:.2f} seconds to execute")
+    return wrapper
+
+
+@timer
+def slow_function():
+    total = 0
+    for i in range(10_000_000):
+        total += i
+
+slow_function()
+
