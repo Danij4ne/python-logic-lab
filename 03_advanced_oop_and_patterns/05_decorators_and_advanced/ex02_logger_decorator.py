@@ -31,3 +31,26 @@ Example (expected behavior):
 # 2. Print the function name and arguments before calling it.
 # 3. Apply the decorator to a sample function.
 # 4. Run the function to show the log output.
+
+
+def logger(func):
+    def wrapped(*args, **kwargs):
+        print(f"Calling function: {func.__name__}")
+        print(f"Arguments: {args}")
+
+        result = func(*args, **kwargs)
+
+        print(f"Result: {result}")
+        return result
+    return wrapped
+
+
+@logger
+def add(a, b):
+    return a + b
+
+
+add(2, 3)
+
+
+
