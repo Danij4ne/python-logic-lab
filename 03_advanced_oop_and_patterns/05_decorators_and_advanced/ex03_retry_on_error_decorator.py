@@ -34,3 +34,34 @@ Example (expected behavior):
 # 2. Retry calling the function if it raises an exception.
 # 3. Apply the decorator to a sample function that may fail.
 # 4. Demonstrate the retry behavior.
+
+
+import random
+
+def retry(attempts: int = 3):
+    def decorator(func):
+        def wrapped(*args, **kwargs):
+            for attempt in range(1, attempts + 1):
+                try:
+                    return func(*args, **kwargs)
+                except Exception as e:
+                    print(f"Attempt {attempt} failed... ({e})")
+                    if attempt == attempts:
+                        print("All attempts failed.")
+                        raise   
+        return wrapped
+    return decorator
+
+
+def divide_random():
+    n = random.randint(0, 2)   
+    print("Random number:", n)
+    return 10 / n
+
+ 
+divide_random()
+
+
+
+
+
