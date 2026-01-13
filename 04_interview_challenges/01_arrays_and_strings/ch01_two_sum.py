@@ -32,3 +32,19 @@ Example:
 # 2. Use loops to check all possible pairs.
 # 3. If two numbers add up to the target, print them.
 # 4. If no pair exists, print a suitable message.
+
+numbers = [5, 2, 4, 9, 1, 3]
+target = 6
+
+found = False   
+for i in range(len(numbers)):
+    for j in range(i + 1, len(numbers)):   
+        if numbers[i] + numbers[j] == target:
+            print(f"{numbers[i]} + {numbers[j]} = {target}")
+            found = True
+
+if not found:
+    print("No pair exists that adds up to the target.")
+
+
+
