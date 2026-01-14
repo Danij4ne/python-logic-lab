@@ -6,7 +6,6 @@
 ![Interview Prep](https://img.shields.io/badge/Section-Interview_Prep-F39C12?style=for-the-badge)
 ![Last Commit](https://img.shields.io/github/last-commit/danij4ne/python-logic-lab?style=for-the-badge)
 ![Commit Activity](https://img.shields.io/github/commit-activity/m/danij4ne/python-logic-lab?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-27AE60?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-1D8348?style=for-the-badge)
 
 
