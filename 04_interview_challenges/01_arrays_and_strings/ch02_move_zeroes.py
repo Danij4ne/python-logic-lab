@@ -30,3 +30,21 @@ Example:
 # 2. Move all zeroes to the end of the list.
 # 3. Keep the order of the non-zero elements.
 # 4. Print the list before and after the change.
+
+nums = [0, 1, 0, 3, 12]
+
+print("Before:", nums)
+
+write = 0   
+
+for read in range(len(nums)):
+    if nums[read] != 0:
+        nums[write] = nums[read]
+        write += 1
+
+while write < len(nums):
+    nums[write] = 0
+    write += 1
+
+print("After:", nums)
+
