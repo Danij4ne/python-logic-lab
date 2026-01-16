@@ -30,3 +30,22 @@ Example:
 # 1. Create a string to analyze.
 # 2. Find the longest substring without repeating characters.
 # 3. Print the length (and optionally the substring).
+
+words = "abcabcbb"
+
+izq = 0
+vistos = set()
+max_len = 0
+
+for der in range(len(words)):
+    c = words[der]
+
+    while c in vistos:
+        vistos.remove(words[izq])
+        izq += 1
+
+    vistos.add(c)
+    max_len = max(max_len, der - izq + 1)
+
+print(max_len)
+
