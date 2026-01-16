@@ -1,4 +1,12 @@
 # Python Logic Lab
+<p align="center">
+  <img 
+    src="https://github.com/user-attachments/assets/83e9dc28-59ca-40b1-8aea-a6f0b61e7ca1"
+    alt="Python Logic Lab"
+    style="max-width: 100%; height: auto;"
+  />
+</p>
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Logic Challenges](https://img.shields.io/badge/Focus-Logic_Challenges-2C3E50?style=for-the-badge)
 ![Structured Levels](https://img.shields.io/badge/Architecture-5_Progressive_Levels-0A66C2?style=for-the-badge)
