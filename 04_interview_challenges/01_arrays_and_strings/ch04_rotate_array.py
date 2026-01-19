@@ -31,3 +31,18 @@ Example:
 # 1. Create a list of numbers and a rotation value K.
 # 2. Rotate the list to the right by K steps.
 # 3. Print the list before and after rotation.
+
+
+numbers = [1, 2, 3, 4, 5, 6, 7]
+new_numbers = []
+k = 3
+
+k = k % len(numbers)
+
+for i in range(len(numbers)):
+    new_numbers.append(numbers[i - k])
+
+print("Antes:", numbers)
+print("Después:", new_numbers)
+
+
