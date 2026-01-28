@@ -29,3 +29,47 @@ Example (expected behavior):
 # 1. Define Node and LinkedList classes.
 # 2. Implement has_cycle() to detect if a cycle exists.
 # 3. Demonstrate the method on both a normal and a cyclic list.
+
+class Node:
+    def __init__(self, data, next=None):
+        self.data = data
+        self.next = next
+
+
+class LinkedList:
+    def __init__(self, head=None):
+        self.head = head
+
+    def has_cycle(self):
+        # Caso base: lista vacía o con un solo nodo
+        if self.head is None or self.head.next is None:
+            return False
+
+        slow = self.head      
+        fast = self.head      
+
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+
+            if slow == fast:
+                return True   
+
+        return False           
+
+
+
+a = Node(1)
+b = Node(2)
+c = Node(3)
+
+a.next = b
+b.next = c
+c.next = None
+
+lista = LinkedList(a)
+print(lista.has_cycle())  # False
+
+
+
+
