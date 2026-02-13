@@ -32,3 +32,34 @@ Example:
 # 3. Before computing, check if n is in the memo.
 # 4. Store new results in the memo before returning them.
 # 5. Test the function with sample values.
+
+"""
+CH02 - Fibonacci with Memoization
+"""
+
+#  Create memo dictionary
+memo = {}
+
+#  Define recursive function
+def fibonacci(n):
+    #  Check if already computed
+    if n in memo:
+        return memo[n]
+    
+    # Base cases
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    
+    # Compute and store result
+    memo[n] = fibonacci(n - 1) + fibonacci(n - 2)
+    
+    return memo[n]
+
+
+#  Test the function
+if __name__ == "__main__":
+    print("fibonacci(6) =", fibonacci(6))   # 8
+    print("fibonacci(10) =", fibonacci(10)) # 55
+    print("fibonacci(20) =", fibonacci(20)) # 6765
