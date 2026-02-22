@@ -31,3 +31,22 @@ Example:
 # 2. Use nested loops to compare and swap adjacent elements.
 # 3. Continue until the list is fully sorted.
 # 4. Print the list before and after sorting.
+
+
+# 1. Create an unsorted list
+numbers = [5, 1, 4, 2, 8]
+
+print("Before sorting:", numbers)
+
+# 2. Bubble Sort using nested loops
+n = len(numbers)
+
+for i in range(n):
+    for j in range(0, n - i - 1):
+        # 3. Compare adjacent elements
+        if numbers[j] > numbers[j + 1]:
+            # Swap if they are in the wrong order
+            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+
+# 4. Print sorted list
+print("After sorting:", numbers)
