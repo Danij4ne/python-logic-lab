@@ -38,3 +38,27 @@ Example:
 # 2. Implement the recursive Quick Sort function.
 # 3. Partition based on a pivot and recursively sort sublists.
 # 4. Print the list before and after sorting.
+
+numbers = [10, 7, 8, 9, 1, 5]
+
+
+def quick_sort(values):
+    if len(values) <= 1:
+        return values
+
+    pivot = values[0]
+    less_or_equal = []
+    greater = []
+
+    for value in values[1:]:
+        if value <= pivot:
+            less_or_equal.append(value)
+        else:
+            greater.append(value)
+
+    return quick_sort(less_or_equal) + [pivot] + quick_sort(greater)
+
+
+print("Before sorting:", numbers)
+sorted_numbers = quick_sort(numbers)
+print("After sorting:", sorted_numbers)
