@@ -36,3 +36,15 @@ Example:
 # 1. Define N.
 # 2. Loop from 1 to N.
 # 3. Print "Fizz", "Buzz", "FizzBuzz", or the number.
+
+N = 15
+
+for number in range(1, N + 1):
+    if number % 3 == 0 and number % 5 == 0:
+        print("FizzBuzz")
+    elif number % 3 == 0:
+        print("Fizz")
+    elif number % 5 == 0:
+        print("Buzz")
+    else:
+        print(number)
