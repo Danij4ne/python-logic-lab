@@ -31,3 +31,22 @@ Example:
 # 2. Sort intervals by start time.
 # 3. Check if any interval overlaps with the previous one.
 # 4. Print True if overlap exists, otherwise False.
+
+
+meetings = [(1, 3), (2, 4), (5, 7)]
+
+
+def has_overlap(intervals):
+    sorted_intervals = sorted(intervals)
+
+    for index in range(1, len(sorted_intervals)):
+        previous_end = sorted_intervals[index - 1][1]
+        current_start = sorted_intervals[index][0]
+
+        if current_start < previous_end:
+            return True
+
+    return False
+
+
+print(has_overlap(meetings))
