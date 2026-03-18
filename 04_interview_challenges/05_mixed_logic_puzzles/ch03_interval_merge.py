@@ -33,3 +33,25 @@ Example:
 # 2. Sort intervals by start time.
 # 3. Merge overlapping intervals.
 # 4. Print the merged result.
+
+intervals = [(1, 3), (2, 6), (8, 10), (9, 12)]
+
+# 2. Sort intervals by start time
+intervals.sort(key=lambda x: x[0])
+
+# 3. Merge overlapping intervals
+merged = []
+
+for interval in intervals:
+    # If merged list is empty OR no overlap
+    if not merged or interval[0] > merged[-1][1]:
+        merged.append(interval)
+    else:
+        # Overlap → merge
+        last_start, last_end = merged[-1]
+        current_start, current_end = interval
+
+        merged[-1] = (last_start, max(last_end, current_end))
+
+# 4. Print the merged result
+print(merged)
