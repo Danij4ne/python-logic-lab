@@ -40,3 +40,52 @@ Example (expected behavior):
 # 3. Handle valid and invalid selections.
 # 4. Implement at least three actions.
 # 5. Exit when selected.
+
+def show_menu():
+    print("\n=== MENU ===")
+    print("1. Say Hello")
+    print("2. Add Two Numbers")
+    print("3. Show Items")
+    print("4. Exit")
+
+
+def say_hello():
+    print("Hello!")
+
+
+def add_numbers():
+    try:
+        a = float(input("Enter first number: "))
+        b = float(input("Enter second number: "))
+        print(f"Result: {a + b}")
+    except ValueError:
+        print("Invalid input. Please enter numbers.")
+
+
+def show_items():
+    items = ["Apple", "Banana", "Orange"]
+    print("Items:")
+    for item in items:
+        print(f"- {item}")
+
+
+def main():
+    while True:
+        show_menu()
+        choice = input("Select an option: ")
+
+        if choice == "1":
+            say_hello()
+        elif choice == "2":
+            add_numbers()
+        elif choice == "3":
+            show_items()
+        elif choice == "4":
+            print("Exiting...")
+            break
+        else:
+            print("Invalid option. Try again.")
+
+
+if __name__ == "__main__":
+    main()
