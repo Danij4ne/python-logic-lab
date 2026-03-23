@@ -39,3 +39,35 @@ Example (expected behavior):
 # 3. After each guess, indicate if it is too low, too high, or correct.
 # 4. Count the number of attempts.
 # 5. End the game when the guess is correct and show the attempt count.
+
+import random
+
+print("I'm thinking of a number between 1 and 100.")
+
+# Número secreto
+secret_number = random.randint(1, 100)
+
+# Contador de intentos
+attempts = 0
+
+while True:
+    guess = input("Take a guess: ")
+
+    # Manejo de errores
+    try:
+        guess = int(guess)
+    except:
+        print("Please enter a valid number.")
+        continue
+
+    # Sumar intento
+    attempts += 1
+
+    # Lógica del juego
+    if guess < secret_number:
+        print("Too low!")
+    elif guess > secret_number:
+        print("Too high!")
+    else:
+        print(f"Correct! You needed {attempts} attempts.")
+        break
