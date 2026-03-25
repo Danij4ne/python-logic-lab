@@ -12,8 +12,6 @@
 ![Structured Levels](https://img.shields.io/badge/Architecture-5_Progressive_Levels-0A66C2?style=flat)
 ![Algorithms & OOP](https://img.shields.io/badge/Includes-Algorithms_&_OOP-8E44AD?style=flat)
 ![Interview Prep](https://img.shields.io/badge/Section-Interview_Prep-F39C12?style=flat)
-![Last Commit](https://img.shields.io/github/last-commit/danij4ne/python-logic-lab?style=flat)
-![Commit Activity](https://img.shields.io/github/commit-activity/m/danij4ne/python-logic-lab?style=flat)
 ![License](https://img.shields.io/badge/License-MIT-1D8348?style=flat)
 
 
